@@ -1,0 +1,724 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+/*TICKET MENU*/
+.ticketmenu {
+    width: 100%;
+    height: 20vh;
+    background-image: url(images/menubg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 27%;
+    margin: 0 0 0 -20px;
+    cursor: pointer;
+    animation: movedown 0.5s linear 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    visibility: hidden;
+}
+
+@keyframes movedown {
+    0% {
+        visibility: visible;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateY(0%);
+    }
+}
+
+
+.menuicon {
+    width: 120px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    animation: moveleft 0.5s linear 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    visibility: hidden;
+}
+
+@keyframes moveleft {
+    0% {
+        visibility: visible;
+        transform: translateX(100px);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 27%;
+    width: 70%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    right: 0;
+}
+
+nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+nav ul li a:hover {
+    color: rgb(182, 36, 36);
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+/*TICKETS*/
+.tickets {
+    width: 100%;
+    height: 280vh;
+    background-image: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.ticketbox {
+    width: 100%;
+    height: 180vh;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ticket1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+.Timage1 {
+    width: 35%;
+    height: 45vh;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: -11%;
+    margin-left: -8%;
+}
+
+.Ttext1 {
+    width: 50%;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    text-align: left;
+    margin-left: -15%;
+
+}
+
+.Ttext1 h1 {
+    color: yellow;
+    font-size: 45px;
+}
+
+.Ttext1 p {
+    color: black;
+    font-size: 25px;
+}
+
+.btn1 {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 25%;
+    margin-left: -35%;
+}
+
+.btn1 a {
+    width: 120px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    background: rgb(182, 36, 36);
+    border-radius: 10px;
+}
+
+.btn1 a:hover {
+    width: 130px;
+    font-size: 16px;
+    color: rgb(182, 36, 36);
+    background: rgb(212, 212, 75);
+    transition: 0.5s;
+}
+
+.ticket2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.Ttext2 {
+    width: 45%;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    text-align: left;
+    margin-left: -5%;
+}
+
+.Ttext2 h1 {
+    color: yellow;
+    font-size: 45px;
+}
+
+.Ttext2 p {
+    color: black;
+    font-size: 25px;
+}
+
+.Timage2 {
+    width: 35%;
+    height: 45vh;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-left: -15%;
+    margin-top: 6%;
+}
+
+
+
+.btn2 {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30%;
+    margin-left: -30%;
+}
+
+.btn2 a {
+    width: 120px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    background: rgb(182, 36, 36);
+    border-radius: 10px;
+}
+
+.btn2 a:hover {
+    width: 130px;
+    font-size: 16px;
+    color: rgb(182, 36, 36);
+    background: rgb(212, 212, 75);
+    transition: 0.5s;
+}
+
+.ticket3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15%;
+}
+
+.Timage3 {
+    width: 35%;
+    height: 45vh;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: 0;
+    margin-left: -5%;
+}
+
+.Ttext3 {
+    width: 50%;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    text-align: left;
+    margin-left: -15%;
+    margin-top: -5%;
+
+}
+
+.Ttext3 h1 {
+    color: yellow;
+    font-size: 45px;
+}
+
+.Ttext3 p {
+    color: black;
+    font-size: 25px;
+}
+
+.btn3 {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 25%;
+    margin-left: -35%;
+}
+
+.btn3 a {
+    width: 120px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    background: rgb(182, 36, 36);
+    border-radius: 10px;
+}
+
+.btn3 a:hover {
+    width: 130px;
+    font-size: 16px;
+    color: rgb(182, 36, 36);
+    background: rgb(212, 212, 75);
+    transition: 0.5s;
+}
+
+/*CONTACT*/
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/menubg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#contact .contacthead {
+    font-size: 45px;
+    color: yellow;
+    text-align: center;
+    padding-top: 50px;
+    cursor: pointer;
+}
+
+.contactbox {
+    width: 100%;
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -45px;
+
+}
+
+.contactphone {
+    width: 30%;
+    display: block;
+    align-items: center;
+    justify-content: spce;
+    text-align: center;
+    margin-top: 68px;
+}
+
+.contactphone h1 {
+    font-size: 33px;
+    color: yellow;
+    cursor: pointer;
+}
+
+.contactphone a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.contactphone a:hover {
+    color: rgb(182, 36, 36);
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.contactmail {
+    width: 30%;
+    display: block;
+    align-items: center;
+    justify-content: spce;
+    text-align: center;
+}
+
+.contactmail h1 {
+    font-size: 33px;
+    color: yellow;
+    cursor: pointer;
+}
+
+.contactmail a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 19px;
+    overflow: hidden;
+}
+
+.contactmail a:hover {
+    color: rgb(182, 36, 36);
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.contactprivacy {
+    width: 30%;
+    display: block;
+    align-items: center;
+    justify-content: spce;
+    text-align: center;
+    margin-top: -115px;
+}
+
+.contactprivacy h1 {
+    font-size: 33px;
+    color: yellow;
+    cursor: pointer;
+}
+
+.contactprivacy a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 19px;
+    overflow: hidden;
+}
+
+.contactprivacy a:hover {
+    color: rgb(182, 36, 36);
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.social {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    margin-top: -70px;
+    margin-left: 40%;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+    visibility: visible;
+}
+
+.social a:hover {
+    color: rgb(182, 36, 36);
+    font-size: 43px;
+    transition: 0.5s;
+    transform: translateY(-8px);
+}
+
+.copyright {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 25%;
+}
+
+.copyright a {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 500px) {
+    nav {
+        visibility: visible;
+        animation: none;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 30vh;
+        background: rgb(217, 57, 57);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        display: block;
+    }
+
+    nav ul:hover {
+        background: rgb(212, 212, 75);
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: -50px;
+    }
+
+    .logo {
+        margin: -85px 50px 0 -10%;
+        width: 200px;
+    }
+
+    .menuicon {
+        width: 75px;
+        margin: -73px 0 0 0;
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .ticketmenu {
+        height: 10vh;
+    }
+
+    /*TICKETS*/
+    .tickets {
+        height: 180vh;
+    }
+
+    .ticket1 {
+        display: block;
+        padding: 0;
+    }
+
+    .Timage1 {
+        margin: 0 0 0 20px;
+        width: 85%;
+    }
+
+    .Ttext1 {
+        margin: -15% 0 0 30px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .Ttext1 h1 {
+        font-size: 25px;
+    }
+
+    .Ttext1 p {
+        font-size: 15px;
+    }
+
+    .btn1 {
+        margin: 30px 0 0 30%;
+    }
+
+    .btn1 a:hover {
+        width: 121px;
+    }
+
+
+    .ticket2 {
+        display: block;
+        margin-top: 25%;
+    }
+
+    .Ttext2 {
+        margin-left: 30px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .Ttext2 h1 {
+        font-size: 25px;
+    }
+
+    .Ttext2 p {
+        font-size: 15px;
+    }
+
+    .Timage2 {
+        margin: 35px 0 0 30px;
+        width: 85%;
+    }
+
+    .btn2 {
+        margin: -55% 0 0 30%;
+    }
+
+    .btn2 a:hover {
+        width: 121px;
+    }
+
+    .ticket3 {
+        display: block;
+        padding: 0;
+    }
+
+    .Timage3 {
+        margin: 40px 0 0 33px;
+        width: 85%;
+    }
+
+    .Ttext3 {
+        margin: -45% 0 0 30px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .Ttext3 h1 {
+        font-size: 25px;
+    }
+
+    .Ttext3 p {
+        font-size: 15px;
+    }
+
+    .btn3 {
+        margin: 30px 0 0 30%;
+    }
+
+    .btn3 a:hover {
+        width: 121px;
+    }
+
+    /*CONTACT*/
+    #contact {
+        height: 153vh;
+    }
+
+    #contact .contacthead {
+        font-size: 35px;
+        padding-top: 50px;
+    }
+
+    .contactbox {
+        display: block;
+        margin-top: -5px;
+    }
+
+    .contactphone {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .contactphone h1 {
+        font-size: 22px;
+    }
+
+    .contactphone a {
+        font-size: 14px;
+    }
+
+    .contactmail {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .contactmail h1 {
+        font-size: 22px;
+    }
+
+    .contactmail a {
+        font-size: 14px;
+    }
+
+    .contactprivacy {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .contactprivacy h1 {
+        font-size: 22px;
+    }
+
+    .contactprivacy a {
+        font-size: 14px;
+    }
+
+    .social {
+        width: 40%;
+        margin: 10px 0 0 30%;
+    }
+
+    .social a {
+        font-size: 25px;
+    }
+
+    .social a:hover {
+        font-size: 25px;
+        transform: none;
+    }
+
+    .copyright {
+        width: 100%;
+        margin: 60px 0 0 0;
+    }
+
+    .copyright a {
+        font-size: 12px;
+    }
+}

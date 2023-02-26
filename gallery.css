@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+/*GALLERY*/
+.gallerymenu {
+    width: 100%;
+    height: 30vh;
+    background-image: url(images/menubg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 27%;
+    margin: 0 0 0 -20px;
+    cursor: pointer;
+    animation: movedown 0.5s linear 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    visibility: hidden;
+}
+
+@keyframes movedown {
+    0% {
+        visibility: visible;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateY(0%);
+    }
+}
+
+
+.menuicon {
+    width: 120px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    animation: moveleft 0.5s linear 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    visibility: hidden;
+}
+
+@keyframes moveleft {
+    0% {
+        visibility: visible;
+        transform: translateX(100px);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 27%;
+    width: 70%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    right: 0;
+}
+
+nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+nav ul li a:hover {
+    color: rgb(182, 36, 36);
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.searchbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -20px;
+}
+
+.searchbar .search {
+    width: 60%;
+    height: 5vh;
+    background: none;
+    border: 0.1px solid white;
+    border-radius: 5px;
+    font-size: 19px;
+    margin-left: -27%;
+    color: yellow;
+}
+
+.searchbar a {
+    width: 50px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(182, 36, 36);
+    overflow: hidden;
+    margin-left: -70%;
+}
+
+.searchbar a:hover {
+    color: rgb(212, 212, 75);
+    font-size: 16px;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/ship1.png");
+    background-size: cover;
+    background-position: center;
+    animation: slide 25s infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slide {
+
+    0%,
+    100% {
+        background-image: url("images/ship1.png");
+        transition: 0.5s;
+    }
+
+    20% {
+        background-image: url("images/airgoods.jpg");
+    }
+
+
+
+    40% {
+        background-image: url("images/travel3.png");
+    }
+
+    60% {
+        background-image: url("images/ship2.png");
+    }
+}
+
+.plane {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    background-size: cover;
+    background-position: center;
+}
+
+.P-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.P-text {
+    width: 35%;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+}
+
+.P-text h3 {
+    color: yellow;
+    font-size: 50px;
+}
+
+.P-text h3:hover {
+    font-size: 49px;
+    transition: 0.5s;
+}
+
+.P-text p {
+    font-size: 20px;
+    color: white;
+}
+
+.P-photo {
+    width: 50%;
+    height: 65vh;
+    background-image: url("images/goodsp1.png");
+    background-position: center;
+    background-size: cover;
+    animation: slide-move 30s infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    cursor: pointer;
+}
+
+@keyframes slide-move {
+
+    0%,
+    100% {
+        background-image: url("images/goodsp1.png");
+    }
+
+    20% {
+        background-image: url("images/goodsp3.png");
+    }
+
+    40% {
+        background-image: url("images/plane.jpg");
+    }
+
+    60% {
+        background-image: url("images/goodsp2.png");
+    }
+}
+
+
+
+
+
+
+
+@media all and (max-width: 500px) {
+    nav {
+        visibility: visible;
+        animation: none;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 30vh;
+        background: rgb(217, 57, 57);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        display: block;
+    }
+
+    nav ul:hover {
+        background: rgb(212, 212, 75);
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: -50px;
+    }
+
+    .logo {
+        margin: -85px 50px 0 -10%;
+        width: 200px;
+    }
+
+    .menuicon {
+        width: 75px;
+        margin: -73px 0 0 0;
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .gallerymenu {
+        height: 13vh;
+    }
+
+    .searchbar {
+        height: 7vh;
+        margin-top: -30%;
+    }
+
+    .searchbar .search {
+        height: 2.55vh;
+        border: 0.2px solid white;
+        font-size: 15px;
+        color: white;
+    }
+
+    .searchbar a {
+        margin-left: -75%;
+        font-size: 12px;
+    }
+
+    .searchbar a:hover {
+        font-size: 19px;
+    }
+
+    .slide {
+        height: 25vh;
+    }
+
+    .plane {
+        height: 10 0vh;
+    }
+
+    .P-container {
+        display: block;
+    }
+
+    .P-text {
+        width: 90%;
+        padding-top: 60px;
+        margin-left: 20px;
+    }
+
+    .P-text h3 {
+        font-size: 30px;
+    }
+
+    .P-text h3:hover {
+        font-size: 30px;
+    }
+
+    .P-text p {
+        font-size: 14px;
+    }
+
+    .P-photo {
+        width: 90%;
+        height: 35vh;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+}
